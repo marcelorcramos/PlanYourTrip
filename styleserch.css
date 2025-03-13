@@ -4,7 +4,11 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
+    
+        background-image: url("imgs/background3.jpg"); /* Substitua pelo caminho da sua imagem */
+        background-size: cover; /* Garante que a imagem cubra todo o fundo */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Impede que a imagem se repita */
 }
 .container {
     width: 80%;
@@ -272,4 +276,52 @@ button {
 #results div:hover {
     background-color: #f1f1f1;
 }
+
+/* Estilo do Pop-up */
+.popup {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.popup-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.popup-content p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.close:hover {
+    color: #000;
+}
+
 

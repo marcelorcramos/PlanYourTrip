@@ -1,14 +1,4 @@
-function toggleDropdown() {
-    var dropdownContent = document.getElementById("dropdownContent");
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  }
-
-
-  const destinations = [
+const destinations = [
     "Afeganistão", "África do Sul", "Albânia", "Alemanha", "Andorra", "Angola", "Antígua e Barbuda", 
     "Arábia Saudita", "Argélia", "Argentina", "Armênia", "Austrália", "Áustria", "Azerbaijão", 
     "Bahamas", "Bangladesh", "Barbados", "Bélgica", "Belize", "Benim", "Bielorrússia", "Bolívia", 
@@ -16,7 +6,7 @@ function toggleDropdown() {
     "Butão", "Cabo Verde", "Camarões", "Camboja", "Canadá", "Catar", "Cazaquistão", "Chade", "Chile", 
     "China", "Chipre", "Colômbia", "Comores", "Coreia do Norte", "Coreia do Sul", "Costa do Marfim", 
     "Costa Rica", "Croácia", "Cuba", "Dinamarca", "Djibouti", "Dominica", "Egito", "El Salvador", 
-    "Emirados Árabes Unidos", "Equador", "Eritreia", "Escócia", "Eslováquia", "Eslovênia", "Espanha", 
+    "Emirados Árabes Unidos", "Equador", "Eritreia", "Escólia", "Eslováquia", "Eslovênia", "Espanha", 
     "Estados Unidos", "Estônia", "Eswatini", "Etiópia", "Fiji", "Filipinas", "Finlândia", "França", 
     "Gabão", "Gâmbia", "Gana", "Geórgia", "Granada", "Grécia", "Guatemala", "Guiana", "Guiné", 
     "Guiné Equatorial", "Guiné-Bissau", "Haiti", "Honduras", "Hungria", "Iêmen", "Ilhas Marshall", 
@@ -37,6 +27,15 @@ function toggleDropdown() {
     "Venezuela", "Vietnã", "Zâmbia", "Zimbábue"
 ];
 
+function toggleDropdown() {
+    var dropdownContent = document.getElementById("dropdownContent");
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+}
+
 function filterDestinations() {
     const input = document.getElementById("destinationInput").value.toLowerCase();
     const resultsContainer = document.getElementById("results");
@@ -44,7 +43,7 @@ function filterDestinations() {
     resultsContainer.innerHTML = "";
 
     if (input.length === 0) {
-        resultsContainer.style.display = "none"; 
+        resultsContainer.style.display = "none";
         return;
     }
 
@@ -64,67 +63,51 @@ function filterDestinations() {
         });
         resultsContainer.style.display = "block";
     } else {
-        resultsContainer.style.display = "none"; 
-    }
-}
-
-function toggleDropdown() {
-    var dropdownContent = document.getElementById("dropdownContent");
-    if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-    } else {
-        dropdownContent.style.display = "block";
+        resultsContainer.style.display = "none";
     }
 }
 
 function confirmSearch() {
     const inputValue = document.getElementById("destinationInput").value;
+
+    // Capturar os valores dos filtros
+    const date = document.getElementById("datePicker").value;
+    const adults = document.getElementById("adults").value;
+    const children = document.getElementById("children").value;
+    const rooms = document.getElementById("rooms").value;
+    const includeType = document.getElementById("includeType").value;
+
     if (inputValue) {
-        alert("Você pesquisou por: " + inputValue); // Exemplo de ação
+        showPopup(inputValue, date, adults, children, rooms, includeType);
     } else {
-        alert("Por favor, insira um destino."); // Mensagem de erro se o campo estiver vazio
+        alert("Por favor, insira um destino.");
     }
 }
 
-// Função para filtrar destinos (mantida do exemplo anterior)
-function filterDestinations() {
-    const input = document.getElementById("destinationInput").value.toLowerCase();
-    const resultsContainer = document.getElementById("results");
+function showPopup(country, date, adults, children, rooms, includeType) {
+    const popup = document.getElementById("popup");
+    const popupTitle = document.getElementById("popup-title");
+    const popupInfo = document.getElementById("popup-info");
+    const popupFilters = document.getElementById("popup-filters");
 
-    resultsContainer.innerHTML = "";
+    // Definir o título e as informações do pop-up
+    popupTitle.textContent = country;
+    popupInfo.textContent = `Informações sobre ${country}. Aqui você pode adicionar detalhes específicos sobre o país.`;
 
-    if (input.length === 0) {
-        resultsContainer.style.display = "none";
-        return;
-    }
+    // Exibir os filtros no pop-up
+    popupFilters.innerHTML = `
+        <strong>Data da Viagem:</strong> ${date || "Não informado"}<br>
+        <strong>Adultos:</strong> ${adults}<br>
+        <strong>Crianças:</strong> ${children}<br>
+        <strong>Quartos:</strong> ${rooms}<br>
+        <strong>Incluir:</strong> ${includeType}<br>
+    `;
 
-    const filteredDestinations = destinations.filter(destination =>
-        destination.toLowerCase().startsWith(input)
-    );
-
-    if (filteredDestinations.length > 0) {
-        filteredDestinations.forEach(destination => {
-            const resultItem = document.createElement("div");
-            resultItem.textContent = destination;
-            resultItem.onclick = () => {
-                document.getElementById("destinationInput").value = destination;
-                resultsContainer.style.display = "none";
-            };
-            resultsContainer.appendChild(resultItem);
-        });
-        resultsContainer.style.display = "block";
-    } else {
-        resultsContainer.style.display = "none";
-    }
+    // Exibir o pop-up
+    popup.style.display = "flex";
 }
 
-// Função para alternar o dropdown (mantida do exemplo anterior)
-function toggleDropdown() {
-    var dropdownContent = document.getElementById("dropdownContent");
-    if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-    } else {
-        dropdownContent.style.display = "block";
-    }
+function closePopup() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "none";
 }
-
