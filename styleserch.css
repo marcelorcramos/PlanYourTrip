@@ -37,26 +37,16 @@ input {
     border-radius: 5px;
 }
 
-button {
-    padding: 10px 15px;
-    border: none;
-    background: #333;
-    color: white;
-    border-radius: 5px;
-    margin-left: 5px;
-    cursor: pointer;
-}
-
 .dropdown {
     position: relative;
     display: inline-block;
   }
   
   .dropdown-content {
-    display: none;
+    display: flex;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -201,17 +191,7 @@ input {
     margin-right: 5px;
 }
 
-button {
-    padding: 8px 15px;
-    border: none;
-    background: #333;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .search-button {
     margin-left: 5px;
@@ -314,4 +294,23 @@ button {
     color: #000;
 }
 
+.search-button{
+    padding: 10px 17px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+}
+button {
+    margin-left: 5px;
+    padding: 13px 22px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+}
 
