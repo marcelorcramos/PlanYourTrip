@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="styleserch.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>ESCOLHA SEU DESTINO</h1>
+        <p>Utilize os filtros</p>
+        <div class="search-box">
+            <input type="text" id="destinationInput" placeholder="Search" oninput="filterDestinations()">
+            <div id="results"></div> <!-- Lista de resultados -->
+            <div class="dropdown">
+                <button onclick="toggleDropdown()">☰</button>
+                <div id="dropdownContent" class="dropdown-content">
+                  <label><input type="checkbox" name="filter1" value="filter1"> Filtro 1</label>
+                  <label><input type="checkbox" name="filter2" value="filter2"> Filtro 2</label>
+                  <label><input type="checkbox" name="filter3" value="filter3"> Filtro 3</label>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script src="js/search.js"></script>
+</body>
+</html>
