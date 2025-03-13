@@ -76,3 +76,55 @@ function toggleDropdown() {
         dropdownContent.style.display = "block";
     }
 }
+
+function confirmSearch() {
+    const inputValue = document.getElementById("destinationInput").value;
+    if (inputValue) {
+        alert("Você pesquisou por: " + inputValue); // Exemplo de ação
+    } else {
+        alert("Por favor, insira um destino."); // Mensagem de erro se o campo estiver vazio
+    }
+}
+
+// Função para filtrar destinos (mantida do exemplo anterior)
+function filterDestinations() {
+    const input = document.getElementById("destinationInput").value.toLowerCase();
+    const resultsContainer = document.getElementById("results");
+
+    resultsContainer.innerHTML = "";
+
+    if (input.length === 0) {
+        resultsContainer.style.display = "none";
+        return;
+    }
+
+    const filteredDestinations = destinations.filter(destination =>
+        destination.toLowerCase().startsWith(input)
+    );
+
+    if (filteredDestinations.length > 0) {
+        filteredDestinations.forEach(destination => {
+            const resultItem = document.createElement("div");
+            resultItem.textContent = destination;
+            resultItem.onclick = () => {
+                document.getElementById("destinationInput").value = destination;
+                resultsContainer.style.display = "none";
+            };
+            resultsContainer.appendChild(resultItem);
+        });
+        resultsContainer.style.display = "block";
+    } else {
+        resultsContainer.style.display = "none";
+    }
+}
+
+// Função para alternar o dropdown (mantida do exemplo anterior)
+function toggleDropdown() {
+    var dropdownContent = document.getElementById("dropdownContent");
+    if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+    } else {
+        dropdownContent.style.display = "block";
+    }
+}
+

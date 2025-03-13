@@ -13,14 +13,51 @@
         <div class="search-box">
             <input type="text" id="destinationInput" placeholder="Search" oninput="filterDestinations()">
             <div id="results"></div>
+            <button class="search-button" onclick="confirmSearch()">🔍</button> 
             <div class="dropdown">
                 <button onclick="toggleDropdown()">☰</button>
                 <div id="dropdownContent" class="dropdown-content">
-                  <label><input type="checkbox" name="filter1" value="filter1"> Filtro 1</label>
-                  <label><input type="checkbox" name="filter2" value="filter2"> Filtro 2</label>
-                  <label><input type="checkbox" name="filter3" value="filter3"> Filtro 3</label>
+                    <label for="datePicker">Escolha a Data:</label>
+                    <input type="date" id="datePicker" name="datePicker">
+
+                    <label for="adults">Quantidade de Adultos:</label>
+                    <select id="adults" name="adults">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5+</option>
+                    </select>
+
+                    <label for="children">Quantidade de Crianças:</label>
+                    <select id="children" name="children">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5+</option>
+                    </select>
+
+                    <label for="rooms">Quantidade de Quartos:</label>
+                    <select id="rooms" name="rooms">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5+</option>
+                    </select>
+
+                    <label for="includeType">Incluir:</label>
+                    <select id="includeType" name="includeType">
+                        <option value="hotel">Apenas Hotel</option>
+                        <option value="flight">Apenas Voo</option>
+                        <option value="both">Hotel e Voo</option>
+                    </select>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
     <script src="js/search.js"></script>
