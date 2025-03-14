@@ -3,6 +3,7 @@ const destinations = [
         id: '1',
         location: 'Afeganistão',
         imagem: 'imgs/afeganistao.jpg',
+        imgamemapa: 'https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/03/mapa-afeganistao.jpg',
         price: 27,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -12,6 +13,7 @@ const destinations = [
         id: '2',
         location: 'África do Sul',
         imagem: 'imgs/africadosul.jpg',
+        imagemmapa: 'https://s5.static.brasilescola.uol.com.br/be/2023/12/mapa-africa-sul.png',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -21,6 +23,7 @@ const destinations = [
         id: '3',
         location: 'Albânia',
         imagem: 'imgs/albania.jpg',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -29,7 +32,8 @@ const destinations = [
     {
         id: '4',
         location: 'Alemanha',
-        imagem: 'https://midias.eurodicas.com.br/wp-content/uploads/2024/07/tudo-sobre-a-alemanha-1-1.jpg.webp', // URL direto da imagem
+        imagem: 'https://midias.eurodicas.com.br/wp-content/uploads/2024/07/tudo-sobre-a-alemanha-1-1.jpg.webp', 
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -38,7 +42,8 @@ const destinations = [
     {
         id: '5',
         location: 'Andorra',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagem: 'https://eltour.travel/sirius/useruploads/states_images/state_79b7bd80ec.jpg',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -47,7 +52,8 @@ const destinations = [
     {
         id: '6',
         location: 'Angola',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagem: 'https://www.almadeviajante.com/wp-content/uploads/luanda-bay-angola-1140x704.jpg',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -56,7 +62,8 @@ const destinations = [
     {
         id: '7',
         location: 'Antígua e Barbuda',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagem: 'https://www.almadeviajante.com/wp-content/uploads/antigua-barbados-1140x760.jpg',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -65,7 +72,8 @@ const destinations = [
     {
         id: '8',
         location: 'Arábia Saudita',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagem: 'https://images.impresa.pt/expresso/2025-01-08-alta-1420727967_t-_idp.jpg-c040c2a3/original',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -74,7 +82,8 @@ const destinations = [
     {
         id: '9',
         location: 'Argélia',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagem: 'https://content.r9cdn.net/rimg/dimg/64/52/449b2967-ctry-3-16446c715f8.jpg?width=1366&height=768&xhint=1100&yhint=1348&crop=true',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -83,7 +92,8 @@ const destinations = [
     {
         id: '10',
         location: 'Argentina',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagem: 'https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/argentinalead.jpg?w=1900&h=1267',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -92,7 +102,8 @@ const destinations = [
     {
         id: '11',
         location: 'Armênia',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagem: 'https://content.r9cdn.net/rimg/dimg/dd/64/e13bb1ee-ctry-11-169b92f061e.jpg?width=1366&height=768&xhint=1483&yhint=1283&crop=true',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -102,6 +113,7 @@ const destinations = [
         id: '12',
         location: 'Austrália',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -111,6 +123,7 @@ const destinations = [
         id: '13',
         location: 'Áustria',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -120,6 +133,7 @@ const destinations = [
         id: '14',
         location: 'Azerbaijão',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -129,6 +143,7 @@ const destinations = [
         id: '15',
         location: 'Bahamas',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -138,6 +153,7 @@ const destinations = [
         id: '16',
         location: 'Bangladesh',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -147,6 +163,7 @@ const destinations = [
         id: '17',
         location: 'Barbados',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -156,6 +173,7 @@ const destinations = [
         id: '18',
         location: 'Bélgica',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -164,6 +182,7 @@ const destinations = [
         id: '19',
         location: 'Belize',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -173,6 +192,7 @@ const destinations = [
         id: '20',
         location: 'Benim',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -182,6 +202,7 @@ const destinations = [
         id: '21',
         location: 'Bielorrússia',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -191,6 +212,7 @@ const destinations = [
         id: '22',
         location: 'Bolívia',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -200,6 +222,7 @@ const destinations = [
         id: '23',
         location: 'Bósnia e Herzegovina',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -209,6 +232,7 @@ const destinations = [
         id: '24',
         location: 'Botsuana',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -218,6 +242,7 @@ const destinations = [
         id: '25',
         location: 'Brasil',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -227,6 +252,7 @@ const destinations = [
         id: '26',
         location: 'Brunei',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -236,6 +262,7 @@ const destinations = [
         id: '27',
         location: 'Bulgária',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -245,6 +272,7 @@ const destinations = [
         id: '28',
         location: 'Burkina Faso',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -254,6 +282,7 @@ const destinations = [
         id: '29',
         location: 'Burundi',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -263,6 +292,7 @@ const destinations = [
         id: '30',
         location: 'Butão',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -272,6 +302,7 @@ const destinations = [
         id: '31',
         location: 'Cabo Verde',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -281,6 +312,7 @@ const destinations = [
         id: '32',
         location: 'Camarões',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -290,6 +322,7 @@ const destinations = [
         id: '33',
         location: 'Camboja',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -299,6 +332,7 @@ const destinations = [
         id: '34',
         location: 'Canadá',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -308,6 +342,7 @@ const destinations = [
         id: '35',
         location: 'Catar',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -317,6 +352,7 @@ const destinations = [
         id: '36',
         location: 'Cazaquistão',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -326,6 +362,7 @@ const destinations = [
         id: '37',
         location: 'Chade',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -335,6 +372,7 @@ const destinations = [
         id: '38',
         location: 'Chile',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -344,6 +382,7 @@ const destinations = [
         id: '39',
         location: 'China',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -353,6 +392,7 @@ const destinations = [
         id: '40',
         location: 'Chipre',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -362,6 +402,7 @@ const destinations = [
         id: '41',
         location: 'Colômbia',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -371,7 +412,8 @@ const destinations = [
         id: '42',
         location: 'Comores',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        price: 120,
+        imagemmapa:'',
+        imagemmapa:'', price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
         features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
@@ -380,6 +422,7 @@ const destinations = [
         id: '43',
         location: 'Coreia do Norte',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -389,6 +432,7 @@ const destinations = [
         id: '44',
         location: 'Coreia do Sul',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -398,6 +442,7 @@ const destinations = [
         id: '45',
         location: 'Costa do Marfim',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -407,6 +452,7 @@ const destinations = [
         id: '46',
         location: 'Costa Rica',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -416,6 +462,7 @@ const destinations = [
         id: '47',
         location: 'Croácia',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -425,6 +472,7 @@ const destinations = [
         id: '48',
         location: 'Cuba',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -434,6 +482,7 @@ const destinations = [
         id: '49',
         location: 'Dinamarca',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -443,6 +492,7 @@ const destinations = [
         id: '50',
         location: 'Djibouti',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -452,6 +502,7 @@ const destinations = [
         id: '51',
         location: 'Dominica',
         imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagemmapa:'',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -1744,107 +1795,110 @@ const destinations = [
         link: 'https://www.booking.com',
         features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
     },
-
-    {
-        id: '195',
-        location: 'Zimbábue',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        price: 120,
-        provider: 'Booking.com',
-        link: 'https://www.booking.com',
-        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+        {
+            id: '195',
+            location: 'Zimbábue',
+            imagem: 'https://exemplo.com/imagem-zimbabue.jpg', // URL da imagem principal
+            imagemmapa: 'https://maps.googleapis.com/maps/api/staticmap?center=Zimbabwe&zoom=6&size=400x400&key=SUA_CHAVE_API', // URL da imagem do mapa
+            price: 120,
+            provider: 'Booking.com',
+            link: 'https://www.booking.com',
+            features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+        }
+    ];
+    
+    function toggleDropdown() {
+        var dropdownContent = document.getElementById("dropdownContent");
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
     }
-];
-
-function toggleDropdown() {
-    var dropdownContent = document.getElementById("dropdownContent");
-    if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-    } else {
-        dropdownContent.style.display = "block";
+    
+    function filterDestinations() {
+        const input = document.getElementById("destinationInput").value.toLowerCase();
+        const resultsContainer = document.getElementById("results");
+    
+        resultsContainer.innerHTML = "";
+    
+        if (input.length === 0) {
+            resultsContainer.style.display = "none";
+            return;
+        }
+    
+        const filteredDestinations = destinations.filter(destination =>
+            destination.location.toLowerCase().startsWith(input)
+        );
+    
+        if (filteredDestinations.length > 0) {
+            filteredDestinations.forEach(destination => {
+                const resultItem = document.createElement("div");
+                resultItem.textContent = destination.location;
+                resultItem.onclick = () => {
+                    document.getElementById("destinationInput").value = destination.location;
+                    resultsContainer.style.display = "none";
+                };
+                resultsContainer.appendChild(resultItem);
+            });
+            resultsContainer.style.display = "block";
+        } else {
+            resultsContainer.style.display = "none";
+        }
     }
-}
-
-function filterDestinations() {
-    const input = document.getElementById("destinationInput").value.toLowerCase();
-    const resultsContainer = document.getElementById("results");
-
-    resultsContainer.innerHTML = "";
-
-    if (input.length === 0) {
-        resultsContainer.style.display = "none";
-        return;
+    
+    function confirmSearch() {
+        const inputValue = document.getElementById("destinationInput").value;
+    
+        const date = document.getElementById("datePicker").value;
+        const adults = document.getElementById("adults").value;
+        const children = document.getElementById("children").value;
+        const rooms = document.getElementById("rooms").value;
+        const includeType = document.getElementById("includeType").value;
+    
+        if (inputValue) {
+            showPopup(inputValue, date, adults, children, rooms, includeType);
+        } else {
+            alert("Por favor, insira um destino.");
+        }
     }
-
-    const filteredDestinations = destinations.filter(destination =>
-        destination.location.toLowerCase().startsWith(input)
-    );
-
-    if (filteredDestinations.length > 0) {
-        filteredDestinations.forEach(destination => {
-            const resultItem = document.createElement("div");
-            resultItem.textContent = destination.location;
-            resultItem.onclick = () => {
-                document.getElementById("destinationInput").value = destination.location;
-                resultsContainer.style.display = "none";
-            };
-            resultsContainer.appendChild(resultItem);
-        });
-        resultsContainer.style.display = "block";
-    } else {
-        resultsContainer.style.display = "none";
+    
+    function showPopup(country, date, adults, children, rooms, includeType) {
+        const popup = document.getElementById("popup");
+        const popupTitle = document.getElementById("popup-title");
+        const popupInfo = document.getElementById("popup-info");
+        const popupFilters = document.getElementById("popup-filters");
+    
+        const destination = destinations.find(dest => dest.location === country);
+    
+        if (destination) {
+            popupTitle.textContent = destination.location;
+            popupInfo.innerHTML = `
+                <div class="image-container">
+                    <img src="${destination.imagem}" alt="${destination.location}" class="destination-image">
+                    <img src="${destination.imagemmapa}" alt="${destination.location}" class="map-image">
+                </div>
+                <strong>Preço:</strong> $${destination.price}<br>
+                <strong>Provedor:</strong> ${destination.provider}<br>
+                <strong>Link:</strong> <a href="${destination.link}" target="_blank">${destination.link}</a><br>
+                <strong>Recursos:</strong> ${destination.features.join(", ")}
+            `;
+    
+            popupFilters.innerHTML = `
+                <strong>Data da Viagem:</strong> ${date || "Não informado"}<br>
+                <strong>Adultos:</strong> ${adults}<br>
+                <strong>Crianças:</strong> ${children}<br>
+                <strong>Quartos:</strong> ${rooms}<br>
+                <strong>Incluir:</strong> ${includeType}<br>
+            `;
+    
+            popup.style.display = "flex";
+        } else {
+            alert("Destino não encontrado.");
+        }
     }
-}
-
-function confirmSearch() {
-    const inputValue = document.getElementById("destinationInput").value;
-
-    const date = document.getElementById("datePicker").value;
-    const adults = document.getElementById("adults").value;
-    const children = document.getElementById("children").value;
-    const rooms = document.getElementById("rooms").value;
-    const includeType = document.getElementById("includeType").value;
-
-    if (inputValue) {
-        showPopup(inputValue, date, adults, children, rooms, includeType);
-    } else {
-        alert("Por favor, insira um destino.");
+    
+    function closePopup() {
+        const popup = document.getElementById("popup");
+        popup.style.display = "none";
     }
-}
-
-function showPopup(country, date, adults, children, rooms, includeType) {
-    const popup = document.getElementById("popup");
-    const popupTitle = document.getElementById("popup-title");
-    const popupInfo = document.getElementById("popup-info");
-    const popupFilters = document.getElementById("popup-filters");
-
-    const destination = destinations.find(dest => dest.location === country);
-
-    if (destination) {
-        popupTitle.textContent = destination.location;
-        popupInfo.innerHTML = `
-            <img src="${destination.imagem}" alt="${destination.location}" style="width:100%; max-width:300px;"><br>
-            <strong>Preço:</strong> $${destination.price}<br>
-            <strong>Provedor:</strong> ${destination.provider}<br>
-            <strong>Link:</strong> <a href="${destination.link}" target="_blank">${destination.link}</a><br>
-            <strong>Recursos:</strong> ${destination.features.join(", ")}
-        `;
-
-        popupFilters.innerHTML = `
-            <strong>Data da Viagem:</strong> ${date || "Não informado"}<br>
-            <strong>Adultos:</strong> ${adults}<br>
-            <strong>Crianças:</strong> ${children}<br>
-            <strong>Quartos:</strong> ${rooms}<br>
-            <strong>Incluir:</strong> ${includeType}<br>
-        `;
-
-        popup.style.display = "flex";
-    } else {
-        alert("Destino não encontrado.");
-    }
-}
-
-function closePopup() {
-    const popup = document.getElementById("popup");
-    popup.style.display = "none";
-}

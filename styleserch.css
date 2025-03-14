@@ -358,3 +358,15 @@ button {
     background-color: #f1f1f1;
 }
 
+.image-container {
+    display: flex; /* Alinha as imagens lado a lado */
+    gap: 10px; /* Espaçamento entre as imagens */
+    margin-bottom: 20px; /* Espaçamento abaixo do contêiner */
+}
+
+.destination-image, .map-image {
+    max-width: 300px; /* Define o tamanho máximo das imagens */
+    width: 100%; /* Faz as imagens se ajustarem ao contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
