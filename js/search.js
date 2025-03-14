@@ -1875,8 +1875,8 @@ const destinations = [
             popupTitle.textContent = destination.location;
             popupInfo.innerHTML = `
                 <div class="image-container">
-                    <img src="${destination.imagem}" alt="${destination.location}" class="destination-image">
-                    <img src="${destination.imagemmapa}" alt="${destination.location}" class="map-image">
+                <img src="${destination.imagem}" alt="${destination.location}" class="destination-image">
+                <img src="${destination.imagemmapa}" alt="${destination.location}" class="map-image">
                 </div>
                 <strong>Preço:</strong> $${destination.price}<br>
                 <strong>Provedor:</strong> ${destination.provider}<br>
