@@ -70,7 +70,6 @@ function filterDestinations() {
 function confirmSearch() {
     const inputValue = document.getElementById("destinationInput").value;
 
-    // Capturar os valores dos filtros
     const date = document.getElementById("datePicker").value;
     const adults = document.getElementById("adults").value;
     const children = document.getElementById("children").value;
@@ -90,11 +89,9 @@ function showPopup(country, date, adults, children, rooms, includeType) {
     const popupInfo = document.getElementById("popup-info");
     const popupFilters = document.getElementById("popup-filters");
 
-    // Definir o título e as informações do pop-up
     popupTitle.textContent = country;
     popupInfo.textContent = `Informações sobre ${country}. Aqui você pode adicionar detalhes específicos sobre o país.`;
 
-    // Exibir os filtros no pop-up
     popupFilters.innerHTML = `
         <strong>Data da Viagem:</strong> ${date || "Não informado"}<br>
         <strong>Adultos:</strong> ${adults}<br>
@@ -103,7 +100,6 @@ function showPopup(country, date, adults, children, rooms, includeType) {
         <strong>Incluir:</strong> ${includeType}<br>
     `;
 
-    // Exibir o pop-up
     popup.style.display = "flex";
 }
 
