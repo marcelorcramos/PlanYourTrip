@@ -2,8 +2,8 @@ const destinations = [
     {
         id: '1',
         location: 'Afeganistão',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        price: 130,
+        imagem: 'imgs/afeganistao.jpg',
+        price: 27,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
         features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
@@ -11,7 +11,7 @@ const destinations = [
     {
         id: '2',
         location: 'África do Sul',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagem: 'imgs/africadosul.jpg',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -20,7 +20,7 @@ const destinations = [
     {
         id: '3',
         location: 'Albânia',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagem: 'imgs/albania.jpg',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -29,7 +29,7 @@ const destinations = [
     {
         id: '4',
         location: 'Alemanha',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        imagem: 'https://midias.eurodicas.com.br/wp-content/uploads/2024/07/tudo-sobre-a-alemanha-1-1.jpg.webp', // URL direto da imagem
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
