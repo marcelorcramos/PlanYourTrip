@@ -1,10 +1,556 @@
 const destinations = [
-    "Afeganistão", "África do Sul", "Albânia", "Alemanha", "Andorra", "Angola", "Antígua e Barbuda", 
-    "Arábia Saudita", "Argélia", "Argentina", "Armênia", "Austrália", "Áustria", "Azerbaijão", 
-    "Bahamas", "Bangladesh", "Barbados", "Bélgica", "Belize", "Benim", "Bielorrússia", "Bolívia", 
-    "Bósnia e Herzegovina", "Botsuana", "Brasil", "Brunei", "Bulgária", "Burkina Faso", "Burundi", 
-    "Butão", "Cabo Verde", "Camarões", "Camboja", "Canadá", "Catar", "Cazaquistão", "Chade", "Chile", 
-    "China", "Chipre", "Colômbia", "Comores", "Coreia do Norte", "Coreia do Sul", "Costa do Marfim", 
+    {
+        id: '1',
+        location: 'Afeganistão',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '2',
+        location: 'África do Sul',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '3',
+        location: 'Albânia',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '4',
+        location: 'Alemanha',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '5',
+        location: 'Andorra',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '6',
+        location: 'Angola',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '7',
+        location: 'Antígua e Barbuda',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '8',
+        location: 'Arábia Saudita',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '9',
+        location: 'Argélia',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '10',
+        location: 'Argentina',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '11',
+        location: 'Armênia',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '12',
+        location: 'Austrália',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '13',
+        location: 'Áustria',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '14',
+        location: 'Azerbaijão',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '15',
+        location: 'Bahamas',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '16',
+        location: 'Bangladesh',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '17',
+        location: 'Barbados',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '18',
+        location: 'Bélgica',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },{
+        id: '19',
+        location: 'Belize',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '20',
+        location: 'Benim',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '21',
+        location: 'Bielorrússia',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '22',
+        location: 'Bolívia',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '23',
+        location: 'Bósnia e Herzegovina',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '24',
+        location: 'Botsuana',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '25',
+        location: 'Brasil',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '26',
+        location: 'Brunei',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '27',
+        location: 'Bulgária',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '28',
+        location: 'Burkina Faso',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '29',
+        location: 'Burundi',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '30',
+        location: 'Butão',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '31',
+        location: 'Cabo Verde',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '32',
+        location: 'Camarões',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '33',
+        location: 'Camboja',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '34',
+        location: 'Canadá',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '35',
+        location: 'Catar',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '36',
+        location: 'Cazaquistão',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '37',
+        location: 'Chade',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '38',
+        location: 'Chile',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '39',
+        location: 'China',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '40',
+        location: 'Chipre',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '41',
+        location: 'Colômbia',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '42',
+        location: 'Comores',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '43',
+        location: 'Coreia do Norte',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '44',
+        location: 'Coreia do Sul',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '45',
+        location: 'Costa do Marfim',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '46',
+        location: 'Costa Rica',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '47',
+        location: 'Croácia',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '48',
+        location: 'Cuba',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '49',
+        location: 'Dinamarca',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '50',
+        location: 'Djibouti',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '51',
+        location: 'Dominica',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '52',
+        location: 'Egito',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '53',
+        location: 'El Salvador',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '54',
+        location: 'Emirados Árabes Unidos',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '55',
+        location: 'Equador',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '56',
+        location: 'Eritreia',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '57',
+        location: 'Chipre',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '58',
+        location: 'Chipre',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '59',
+        location: 'Chipre',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+    {
+        id: '60',
+        location: 'Chipre',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    },
+
+
+    {
+        id: '195',
+        location: 'Zimbábue',
+        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    }
+];
+    "Colômbia", "Comores", "Coreia do Norte", "Coreia do Sul", "Costa do Marfim", 
     "Costa Rica", "Croácia", "Cuba", "Dinamarca", "Djibouti", "Dominica", "Egito", "El Salvador", 
     "Emirados Árabes Unidos", "Equador", "Eritreia", "Escólia", "Eslováquia", "Eslovênia", "Espanha", 
     "Estados Unidos", "Estônia", "Eswatini", "Etiópia", "Fiji", "Filipinas", "Finlândia", "França", 
