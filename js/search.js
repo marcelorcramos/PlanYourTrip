@@ -1795,16 +1795,16 @@ const destinations = [
         link: 'https://www.booking.com',
         features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
     },
-        {
-            id: '195',
-            location: 'Zimbábue',
-            imagem: 'https://exemplo.com/imagem-zimbabue.jpg', // URL da imagem principal
-            imagemmapa: 'https://maps.googleapis.com/maps/api/staticmap?center=Zimbabwe&zoom=6&size=400x400&key=SUA_CHAVE_API', // URL da imagem do mapa
-            price: 120,
-            provider: 'Booking.com',
-            link: 'https://www.booking.com',
-            features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
-        }
+    {
+        id: '195',
+        location: 'Zimbábue',
+        imagem: 'https://exemplo.com/imagem-zimbabue.jpg', // URL da imagem principal
+        imagemmapa: 'https://maps.googleapis.com/maps/api/staticmap?center=Zimbabwe&zoom=6&size=400x400&key=SUA_CHAVE_API', // URL da imagem do mapa
+        price: 120,
+        provider: 'Booking.com',
+        link: 'https://www.booking.com',
+        features: ['Free cancellation', 'Breakfast included', 'Swimming pool']
+    }
     ];
     
     function toggleDropdown() {
@@ -1859,7 +1859,7 @@ const destinations = [
         if (inputValue) {
             showPopup(inputValue, date, adults, children, rooms, includeType);
         } else {
-            alert("Por favor, insira um destino.");
+            mostrarPopup("Por favor, insira um destino!");
         }
     }
     
@@ -1875,8 +1875,8 @@ const destinations = [
             popupTitle.textContent = destination.location;
             popupInfo.innerHTML = `
                 <div class="image-container">
-                <img src="${destination.imagem}" alt="${destination.location}" class="destination-image">
-                <img src="${destination.imagemmapa}" alt="${destination.location}" class="map-image">
+                    <img src="${destination.imagem}" alt="${destination.location}" class="destination-image">
+                    <img src="${destination.imagemmapa}" alt="${destination.location}" class="map-image">
                 </div>
                 <strong>Preço:</strong> $${destination.price}<br>
                 <strong>Provedor:</strong> ${destination.provider}<br>
@@ -1901,4 +1901,20 @@ const destinations = [
     function closePopup() {
         const popup = document.getElementById("popup");
         popup.style.display = "none";
+    }
+
+    function mostrarPopup(mensagem) {
+        let popup = document.createElement("div");
+        popup.className = "popup-alert";
+        popup.innerText = mensagem;
+        document.body.appendChild(popup);
+
+        setTimeout(() => {
+            popup.classList.add("mostrar");
+        }, 100);
+
+        setTimeout(() => {
+            popup.classList.remove("mostrar");
+            setTimeout(() => popup.remove(), 500);
+        }, 3000);
     }
