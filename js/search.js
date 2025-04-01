@@ -33,7 +33,7 @@ const destinations = [
         id: '4',
         location: 'Alemanha',
         imagem: 'https://midias.eurodicas.com.br/wp-content/uploads/2024/07/tudo-sobre-a-alemanha-1-1.jpg.webp', 
-        imagemmapa:'',
+        imagemmapa:'https://static.todamateria.com.br/upload/58/51/58513f3fdaea8-alemanha.jpg',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
