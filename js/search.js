@@ -63,7 +63,7 @@ const destinations = [
         id: '7',
         location: 'Antígua e Barbuda',
         imagem: 'https://www.almadeviajante.com/wp-content/uploads/antigua-barbados-1140x760.jpg',
-        imagemmapa:'',
+        imagemmapa:'https://www.worldatlas.com/upload/f0/f2/c4/ag-01.png',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
