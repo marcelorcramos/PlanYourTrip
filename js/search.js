@@ -73,7 +73,7 @@ const destinations = [
         id: '8',
         location: 'Arábia Saudita',
         imagem: 'https://images.impresa.pt/expresso/2025-01-08-alta-1420727967_t-_idp.jpg-c040c2a3/original',
-        imagemmapa:'',
+        imagemmapa:'https://static.vecteezy.com/ti/vetor-gratis/p1/19583739-mapa-da-arabia-saudita-vetor.jpg',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
