@@ -132,8 +132,8 @@ const destinations = [
     {
         id: '14',
         location: 'Azerbaijão',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://content.nationalgeographic.pt/medio/2023/08/08/baku_7c54015e_230728085201_230808144850_1280x959.jpg',
+        imagemmapa:'https://s2.static.brasilescola.uol.com.br/be/2022/11/mapa-azerbaijao.jpg',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
