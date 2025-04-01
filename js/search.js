@@ -23,7 +23,7 @@ const destinations = [
         id: '3',
         location: 'Albânia',
         imagem: 'imgs/albania.jpg',
-        imagemmapa:'',
+        imagemmapa:'https://static.mundoeducacao.uol.com.br/mundoeducacao/2021/01/mapa-da-albania.jpg',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
