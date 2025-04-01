@@ -142,8 +142,8 @@ const destinations = [
     {
         id: '15',
         location: 'Bahamas',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://d2l4159s3q6ni.cloudfront.net/resize/1440x800/filters:max_age(2604800):quality(85)/s3/dam/photos/7b/53/cb/1f/22c72e03684f1bcfd6988a406056362eaac7654ade3ec3051d63495d.jpg',
+        imagemmapa:'https://cdn.britannica.com/81/6181-050-BDF7FB60/map-Bahamas.jpg',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
