@@ -162,8 +162,8 @@ const destinations = [
     {
         id: '17',
         location: 'Barbados',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://www.kayak.pt/rimg/himg/69/fa/70/ice-548523-116050936-060279.jpg?width=1366&height=768&crop=true',
+        imagemmapa:'https://lh3.googleusercontent.com/proxy/6zw9eKOi6K-de-lMARLULpNJC9DSqP7uj_OT_-ZoD7Z7Ni1WxREAQWRdGsNTunkFWaV5Bagt-9kmp21m_lEZ5FSaRG5bFVWv0CBIXBYTz3AhXs_VdnAmUVbRr5M3VXMAV0pa56ZPTd-Q3b5azWFkqbs1AJPUj2UVL8QoBRg8eefWhL5e8cWm',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
