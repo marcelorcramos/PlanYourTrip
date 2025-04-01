@@ -172,8 +172,8 @@ const destinations = [
     {
         id: '18',
         location: 'Bélgica',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://www.kangaroo.com.br/images/belgica/belgica-gent-catedral-medieval-sint-michielskerkt.jpg',
+        imagemmapa:'https://www.guiageo.com/europa/imagens/mapa-politico-belgica.jpg',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
