@@ -83,7 +83,7 @@ const destinations = [
         id: '9',
         location: 'Argélia',
         imagem: 'https://content.r9cdn.net/rimg/dimg/64/52/449b2967-ctry-3-16446c715f8.jpg?width=1366&height=768&xhint=1100&yhint=1348&crop=true',
-        imagemmapa:'',
+        imagemmapa:'https://pordentrodaafrica.com/wp-content/uploads/2013/01/algeria-mapa.jpg',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
