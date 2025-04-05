@@ -191,8 +191,8 @@ const destinations = [
     {
         id: '20',
         location: 'Benim',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://maironpelomundo.com/wp-content/uploads/2023/05/Porto-Novo-1-02.jpeg',
+        imagemmapa:'https://cdn.britannica.com/67/5067-050-FCAD3096/Benin-map-boundaries-cities-locator.jpg',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -201,8 +201,8 @@ const destinations = [
     {
         id: '21',
         location: 'Bielorrússia',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://media.istockphoto.com/id/499206036/pt/foto/vista-da-cidade-de-minsk-bielorrússia-temporada-de-verão-tempo-de-pôr-do-sol.jpg?s=1024x1024&w=is&k=20&c=RZvJUn3oBPHqTg8CUst2hyYJZDrecFo8gSAlHlTwinU=',
+        imagemmapa:'https://upload.wikimedia.org/wikipedia/commons/5/55/Belarus-CIA_WFB_Map.png',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
