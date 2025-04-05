@@ -311,8 +311,8 @@ const destinations = [
     {
         id: '32',
         location: 'Camarões',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://www.4oito.com.br/media/noticias/capital-de-camaroes-4oito_10869.jpg',
+        imagemmapa:'https://www.infoescola.com/wp-content/uploads/2012/10/mapa-camaroes.jpg',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
