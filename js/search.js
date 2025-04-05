@@ -211,8 +211,8 @@ const destinations = [
     {
         id: '22',
         location: 'Bolívia',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://content.nationalgeographic.pt/medio/import/attachment/NatGeo/Viagens/PlaniciesSal/reflection-salar-de-uyuni-bolivia.jpg',
+        imagemmapa:'https://cdn.britannica.com/55/6755-050-E888D579/Bolivia-map-boundaries-cities-locator.jpg',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
