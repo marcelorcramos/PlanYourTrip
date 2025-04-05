@@ -281,8 +281,8 @@ const destinations = [
     {
         id: '29',
         location: 'Burundi',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://i0.wp.com/comedytravelwriting.com/wp-content/uploads/2019/02/Gitega-city.jpeg?resize=886%2C625&ssl=1',
+        imagemmapa:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/By-map-fr.png/300px-By-map-fr.png',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
