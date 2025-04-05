@@ -221,8 +221,8 @@ const destinations = [
     {
         id: '23',
         location: 'Bósnia e Herzegovina',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://visitworld.today/media/country/image/desktop_image/myrFoENf41cfj51nbpMdhflWgLlVKL5YPP2PDlYR.webp',
+        imagemmapa:'https://cdn.britannica.com/30/6230-050-CEAEB54A/features-Bosnia-and-Herzegovina.jpg',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
