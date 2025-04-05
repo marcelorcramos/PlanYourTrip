@@ -251,8 +251,8 @@ const destinations = [
     {
         id: '26',
         location: 'Brunei',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://mytours.company/wp-content/uploads/Brunei.jpg',
+        imagemmapa:'https://cdn.britannica.com/37/4037-050-1EDD88B9/Brunei-map-boundaries-cities-locator.jpg',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
