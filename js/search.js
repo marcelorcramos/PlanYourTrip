@@ -291,8 +291,8 @@ const destinations = [
     {
         id: '30',
         location: 'Butão',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://content.nationalgeographic.pt/medio/import/attachment/edicoesespeciais/VIAGENS/Butao/b11.jpg',
+        imagemmapa:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNZhDglpx7zPHIZM6VzKZSCxeMEfWvAkVZ8g&s',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
@@ -301,8 +301,8 @@ const destinations = [
     {
         id: '31',
         location: 'Cabo Verde',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://webassets.transavia.com/78ae936f-d39d-01b0-c3ef-dc738304142f/c266ff3a-c8d3-452d-b40e-ed8437d62ec2/Praia.jpg?w=2200&h=1200&fit=clip&rect=0,36,2200,1200&fm=jpg&auto=format',
+        imagemmapa:'https://feelcaboverde.com/wp-content/uploads/2022/09/01.png',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
