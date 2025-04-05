@@ -261,8 +261,8 @@ const destinations = [
     {
         id: '27',
         location: 'Bulgária',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/2c/32/3a.jpg',
+        imagemmapa:'https://s5.static.brasilescola.uol.com.br/be/2022/03/mapa-bulgaria.png',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
