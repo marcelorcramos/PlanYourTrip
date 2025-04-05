@@ -181,8 +181,8 @@ const destinations = [
     },{
         id: '19',
         location: 'Belize',
-        imagem: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmundoeducacao.uol.com.br%2Fgeografia%2Fafeganistao.htm&psig=AOvVaw0ZbGRcUO1Ro4mmDF2M1QdC&ust=1741989848988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDNsYqIiIwDFQAAAAAdAAAAABAE',
-        imagemmapa:'',
+        imagem: 'https://www.fulltravel.it/wp-content/uploads/2015/10/Great_Blue_Hole.jpg',
+        imagemmapa:'https://upload.wikimedia.org/wikipedia/commons/0/06/Belize-CIA_WFB_Map.png',
         price: 120,
         provider: 'Booking.com',
         link: 'https://www.booking.com',
